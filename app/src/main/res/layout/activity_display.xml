@@ -107,7 +107,7 @@
                     android:layout_height="wrap_content"
                     android:text="Ramanuj Gupta Junior College, Silchar"
                     android:textStyle="bold"
-                    android:textSize="18dp"
+                    android:textSize="16dp"
                     android:layout_gravity="center_vertical"
                     />
 

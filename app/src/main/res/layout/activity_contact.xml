@@ -44,10 +44,10 @@
                 android:text="Vidisha Bardia"
                 />
                 <TextView
-                android:text="Food Sc. and Nutriotion Specialist"
+                android:text="Food Sc. and Nutrition Specialist"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="5dp"
-
+android:textSize="12dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
@@ -118,6 +118,186 @@ android:layout_marginTop="5dp"
                 android:src="@drawable/instagram"
                 />
 
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <com.alorma.timeline.RoundTimelineView
+                    android:id="@+id/timeline1"
+                    android:layout_width="?android:listPreferredItemHeight"
+                    android:layout_height="?android:listPreferredItemHeight"
+                    app:timeline_indicatorSize="10dp"
+                    app:timeline_lineStyle="linear"
+                    android:textDirection="rtl"
+
+                    app:timeline_type="middle"></com.alorma.timeline.RoundTimelineView>
+                <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:layout_gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Certification"
+
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="iLEAD certification in personality development and communication(2012)"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <com.alorma.timeline.RoundTimelineView
+                    android:id="@+id/timeline21"
+                    android:layout_width="?android:listPreferredItemHeight"
+                    android:layout_height="?android:listPreferredItemHeight"
+                    app:timeline_indicatorSize="10dp"
+                    app:timeline_lineStyle="linear"
+                    android:textDirection="rtl"
+
+                    app:timeline_type="middle"></com.alorma.timeline.RoundTimelineView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="center_vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Certification"
+
+                        android:layout_gravity="center_vertical"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coursera certification in Nutrition for Health Promotion Disease Prevention"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:layout_gravity="center_vertical"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <com.alorma.timeline.RoundTimelineView
+                    android:id="@+id/timeline221"
+                    android:layout_width="?android:listPreferredItemHeight"
+                    android:layout_height="?android:listPreferredItemHeight"
+                    app:timeline_indicatorSize="10dp"
+                    app:timeline_lineStyle="linear"
+                    android:textDirection="rtl"
+
+                    app:timeline_type="middle"></com.alorma.timeline.RoundTimelineView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="center_vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Internship"
+
+                        android:layout_gravity="center_vertical"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apollo Hospitals, Bangalore in Nutrition and Dietetics department"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:layout_gravity="center_vertical"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <com.alorma.timeline.RoundTimelineView
+                    android:id="@+id/timeline2w1"
+                    android:layout_width="?android:listPreferredItemHeight"
+                    android:layout_height="?android:listPreferredItemHeight"
+                    app:timeline_indicatorSize="10dp"
+                    app:timeline_lineStyle="linear"
+                    android:textDirection="rtl"
+
+                    app:timeline_type="middle"></com.alorma.timeline.RoundTimelineView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="center_vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Internship"
+
+                        android:layout_gravity="center_vertical"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Post Graduate Institute in Medical Research and Education,Chandigarh"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:layout_gravity="center_vertical"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
         <View
