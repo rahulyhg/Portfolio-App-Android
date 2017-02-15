@@ -1,13 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_contact"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_display"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.portfolio.vidisha.Graduation.Contact">
+    android:layout_weight="1"
+   tools:context="com.portfolio.vidisha.Graduation.Graduation">
 
-</RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:padding="20dp"
+        android:paddingRight="10dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/mee"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+                android:textSize="24dp"
+
+                android:layout_marginLeft="20dp"
+                android:text="Vidisha Bardia"
+                />
+                <TextView
+                android:text="Food Sc. and Nutriotion Specialist"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Student"
+                    android:layout_marginLeft="20dp"
+android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+            android:background="#c2c2c2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:paddingTop="10dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/call"
+                android:onClick="onCall"
+                android:layout_weight="0.2"
+                android:src="@drawable/ph"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="#000"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_weight="0.2"
+                android:id="@+id/snapcaht"
+                android:onClick="onSnapchat"
+                android:layout_height="30dp"
+                android:src="@drawable/snapchat"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="#000"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_weight="0.2"
+                android:layout_height="30dp"
+                android:onClick="onFacebook"
+                android:id="@+id/Facebook"
+                android:src="@drawable/fb"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="#000"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_weight="0.2"
+                android:id="@+id/insta"
+                android:onClick="onInsta"
+                android:layout_height="30dp"
+                android:src="@drawable/instagram"
+                />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+            android:background="#c2c2c2"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f5f5f5"
+        android:layout_weight="0.2"
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/home"
+            android:onClick="onHome"
+            android:layout_weight="0.2"
+            android:src="@drawable/home"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#000"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_weight="0.2"
+            android:id="@+id/school"
+            android:onClick="onSchool"
+            android:layout_height="30dp"
+            android:src="@drawable/school"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#000"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_weight="0.2"
+            android:layout_height="30dp"
+            android:onClick="onHobby"
+            android:id="@+id/hobby"
+            android:src="@drawable/xbox"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#000"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_weight="0.2"
+            android:id="@+id/contact"
+            android:onClick="onContact"
+            android:layout_height="30dp"
+            android:src="@drawable/phone"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

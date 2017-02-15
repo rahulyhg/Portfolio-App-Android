@@ -1,13 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_hobby"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_display"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.portfolio.vidisha.Graduation.Hobby">
+    android:layout_weight="1"
 
-</RelativeLayout>
+    tools:context="com.portfolio.vidisha.Graduation.Graduation">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            >
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="6"
+                    android:background="@drawable/rounder_corner"
+                    android:padding="16dp"
+                    android:text="Music and Dance.Its my one of the hobbies which i love to doin my free time."
+                    android:textColor="#000" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="-15dp"
+                    android:layout_marginTop="6.5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/arrow_bg1" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/music" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout1"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/food" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="-15dp"
+                    android:layout_marginTop="6.5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/arrow_bg2" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="6"
+                    android:background="@drawable/rounded_corner_1"
+                    android:padding="16dp"
+                    android:text="Cooking and Baking is my passion, and i thrive to it."
+                    android:textColor="#000" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textVieww"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="6"
+                    android:textColor="#000"
+
+                    android:background="@drawable/rounder_corner"
+                    android:padding="16dp"
+                    android:text="I love Photography.I have an undying passion for it."
+                    />
+                <ImageView
+                    android:id="@+id/imageVieww"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="-15dp"
+                    android:layout_marginTop="6.5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/arrow_bg1" />
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/camera" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f5f5f5"
+        android:layout_weight="0.2"
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/home"
+            android:onClick="onHome"
+            android:layout_weight="0.2"
+            android:src="@drawable/home"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#000"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_weight="0.2"
+            android:id="@+id/school"
+            android:onClick="onSchool"
+            android:layout_height="30dp"
+            android:src="@drawable/school"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#000"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_weight="0.2"
+            android:layout_height="30dp"
+            android:onClick="onHobby"
+            android:id="@+id/hobby"
+            android:src="@drawable/xbox"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#000"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_weight="0.2"
+            android:id="@+id/contact"
+            android:onClick="onContact"
+            android:layout_height="30dp"
+            android:src="@drawable/phone"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>
