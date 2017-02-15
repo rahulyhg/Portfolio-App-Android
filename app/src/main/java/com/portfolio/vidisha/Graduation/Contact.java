@@ -41,11 +41,18 @@ public class Contact extends AppCompatActivity {
     }
     public void onSnapchat(View v){
 
-       
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("*/*");
+        intent.setPackage("com.snapchat.android");
+        startActivity(Intent.createChooser(intent, "Open Snapchat"));
     }
     public void onFacebook(View v){
 
-        startActivity(new Intent(Contact.this,Home.class));
+        String url = "https://www.facebook.com/vidisha.bardia";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+
+        startActivity(i);
     }
     public void onInsta(View v){
 
